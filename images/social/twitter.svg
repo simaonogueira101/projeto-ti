@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="25px" viewBox="0 0 26 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Twitter-black</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-0.6%" y="-12.5%" width="101.2%" height="132.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.216004303 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-579.000000, -762.000000)" fill="#000000">
+            <g id="NAVBAR" filter="url(#filter-1)" transform="translate(0.000000, 747.000000)">
+                <g id="Group" transform="translate(583.000000, 17.000000)">
+                    <path d="M18,2.77573131 C17.338616,3.07692308 16.6265188,3.28060672 15.8795563,3.3716143 C16.6423666,2.9035753 17.2276809,2.16143012 17.5034337,1.27735645 C16.7892235,1.71072589 16,2.02600217 15.1568938,2.19501625 C14.4849445,1.45937161 13.5245642,1 12.461701,1 C10.4236661,1 8.77020602,2.69555796 8.77020602,4.78656555 C8.77020602,5.08342362 8.80190174,5.3716143 8.86529319,5.64897075 C5.79609086,5.4907909 3.07554147,3.98483207 1.25303751,1.69122427 C0.935023772,2.2524377 0.753301638,2.9035753 0.753301638,3.59696641 C0.753301638,4.91007584 1.40517697,6.06933911 2.39619651,6.74864572 C1.79186476,6.73022752 1.22134179,6.55796316 0.722662441,6.27627302 L0.722662441,6.32286024 C0.722662441,8.15817985 1.9957739,9.68905742 3.68621236,10.035753 C3.37665082,10.1245937 3.05018489,10.1690141 2.71315372,10.1690141 C2.47543582,10.1690141 2.24300053,10.1462622 2.01796091,10.1018418 C2.4881141,11.6056338 3.85103011,12.7009751 5.46751189,12.7302275 C4.20390914,13.7464789 2.61067089,14.3521127 0.881141046,14.3521127 C0.583201268,14.3521127 0.288431062,14.3347779 0,14.3001083 C1.63444268,15.3726977 3.57633386,16 5.66085578,16 C12.4543053,16 16.1679873,10.2307692 16.1679873,5.22643554 C16.1679873,5.06175515 16.1648177,4.89707476 16.1584786,4.73564464 C16.8800845,4.20151679 17.5066033,3.53521127 18,2.77573131" id="Twitter"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
