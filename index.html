@@ -3,42 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <title>8-Bit Forgers</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="hero">
-        <h1>8-Bit Forgers</h1>
-        <img src="images/hammer-title.png" width="500" height="auto" alt="hero-image" title="Hero Image">
-    </div>
-
     <header>
         <nav>
-            <a href="index.html">
-                <img src="images/hammer-title.png" width="100" height="auto" alt="nav-logo" title="Navbar logo">
-            </a>
-            <ul>
-                <li>
-                    <a href="portfolio.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="news.html">News</a>
-                </li>
-                <li>
-                    <a href="team.html">Team</a>
-                </li>
-                <li>
-                    <a href="about.html">About</a>
-                </li>
-            </ul>
+            <div class="nav-top">
+                <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
+            </div>
+            <div class="nav-bottom">
+                <p class="press-start text-5">+</p>
+            </div>
         </nav>
     </header>
 
-    <main>
-        <section>
-            <div class="container">
-                <div class="container-left">
-                    <article>
-                        <h1>Welcome Bits!</h1>
-                        <h2>Subtitle</h2>
+    <div class="hero">
+        <div class="hero-content">
+            <img src="images/hammer-title.png" alt="hero-image" title="Hero Image">
+        </div>
+        <div class="hero-indication">
+            <div class="hero-indication-left">
+                <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo">
+            </div>
+            <div class="hero-indication-right">
+                <p class="press-start">V</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-footer">
+        <main>
+            <section class="section-welcome">
+                <article>
+                    <h3 class="orange-text text-6">In hac habitasse platea dictumst.</h3>
+                    <h1 class="dark-text text-welcome">Welcome Bits!</h1>
+                    <div class="container">
+                        <div class="container-left">
+                            <div class="container-subtitle">
+                                <h2 class="text-6">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <div class="news-scroll">
+                    <section class="news-item news-item__left">
+                        <article>
+                            <h3>Title</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="news-item news-item__center">
+                        <article>
+                            <h2>Title</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </article>
+                    </section>
+                    <section class="news-item news-item__right">
+                        <article>
+                            <h3>Title</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua.
+                            </p>
+                        </article>
+                    </section>
+                    <a href="news.html">More...</a>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <h1>Featured Project</h1>
+                    <div class="container-left">
+                        <img src="images/hammer.jpg" width="500" height="auto" alt="featured-project-image" title="Featured Project Image">
+                    </div>
+                    <div class="container-right">
+                        <h3>Title</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -46,83 +96,33 @@
                             voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                             non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
-                    </article>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="news-scroll">
-                <section class="news-item news-item__left">
-                    <article>
-                        <h3>Title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </article>
-                </section>
-                <section class="news-item news-item__center">
-                    <article>
-                        <h2>Title</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </article>
-                </section>
-                <section class="news-item news-item__right">
-                    <article>
-                        <h3>Title</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </article>
-                </section>
-                <a href="news.html">More...</a>
-            </div>
-        </section>
-        <section>
-            <div class="container">
-                <h1>Featured Project</h1>
-                <div class="container-left">
-                    <img src="images/hammer.jpg" width="500" height="auto" alt="featured-project-image" title="Featured Project Image">
-                </div>
-                <div class="container-right">
-                    <h3>Title</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
 
-    <footer>
-        <section>
-            <div class="container">
-                <div class="container-left">
-                    <h1>Contactos</h1>
-                    <a href="https://www.facebook.com/8BITFORGERS/" target="_blank" >
-                        <img src="images/social/facebook.svg" alt="facebook-logo" title="Facebook Logo">
-                    </a>
-                    <a href="https://twitter.com/8BitForgers" target="_blank">
-                        <img src="images/social/twitter.svg" alt="twitter-logo" title="Twitter Logo">
-                    </a>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
-                    </p>
+        <footer>
+            <section>
+                <div class="container">
+                    <div class="container-left">
+                        <h1>Contactos</h1>
+                        <a href="https://www.facebook.com/8BITFORGERS/" target="_blank" >
+                            <img src="images/social/facebook.svg" alt="facebook-logo" title="Facebook Logo">
+                        </a>
+                        <a href="https://twitter.com/8BitForgers" target="_blank">
+                            <img src="images/social/twitter.svg" alt="twitter-logo" title="Twitter Logo">
+                        </a>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="container-right">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0193876971002!2d-8.418272583756739!3d40.18638197939246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9952c96b155%3A0x6300a2269c33d7c5!2sDEI!5e0!3m2!1spt-PT!2spt!4v1506527608149" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="container-right">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0193876971002!2d-8.418272583756739!3d40.18638197939246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9952c96b155%3A0x6300a2269c33d7c5!2sDEI!5e0!3m2!1spt-PT!2spt!4v1506527608149" width="600" height="450" frameborder="0" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section>
-    </footer>
+            </section>
+        </footer>
+    </div>
 </body>
 </html>
