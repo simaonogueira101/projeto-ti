@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>8-Bit Forgers</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header>
+    <header class="header-desktop">
         <nav>
             <div class="nav-top">
                 <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
@@ -18,6 +18,22 @@
                 <p class="press-start text-7">...</p>
             </div>
         </nav>
+        <div class="exit-nav">
+          <p class="press-start">x</p>
+        </div>
+    </header>
+    <header class="header-mobile">
+        <nav>
+            <div class="nav-top">
+                <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
+            </div>
+            <div class="nav-bottom">
+                <p class="press-start text-7">...</p>
+            </div>
+        </nav>
+        <div class="exit-nav">
+          <p class="press-start">x</p>
+        </div>
     </header>
 
     <div class="hero">
@@ -45,7 +61,7 @@
                     <div class="container">
                         <div class="container-left">
                             <div class="container-subtitle">
-                                <h2 class="text-6">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.</h2>
+                                <h2 class="text-6 text-thin">In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam.</h2>
                             </div>
                         </div>
                     </div>
@@ -145,7 +161,7 @@
                             Making your own computer from scratch is not only fun to do but cheaper as well. You can get
                             to choose the parts you want to use on your PC.
                         </p>
-                        <a class="light-text text-bold text-6" href="sections/news-article/article1.html">
+                        <a class="light-text text-bold text-6 read-more" href="sections/news-article/article1.html">
                             Read More...
                         </a>
                     </div>
@@ -159,17 +175,18 @@
             <div class="container container-height">
                 <div class="container-left container-footer-left">
                     <p class="light-text text-6 text-bold">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        Where are we?
                     </p>
                     <p class="light-text text-6 text-thin">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua.
                     </p>
                     <div>
-                        <p class="light-text text-bold text-6">
+                        <p class="light-text text-6 text-bold">
+                            Get in touch!
+                        </p>
+                        <p class="light-text text-thin text-6">
                             Leo Phillips
                             <br>
                             3372 Hegmann Locks Suite 593
@@ -178,6 +195,9 @@
                         </p>
                     </div>
                     <div>
+                        <p class="light-text text-6 text-bold">
+                            Social
+                        </p>
                         <a href="https://www.facebook.com/8BITFORGERS/" target="_blank" >
                             <img src="images/social/facebook.svg" alt="facebook-logo" title="Facebook Logo">
                         </a>
