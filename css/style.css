@@ -104,9 +104,22 @@ h5 {
     background-size: cover;
     position: relative;
     z-index: 2;
+    overflow: hidden;
+}
+
+.hero-video {
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100vh;
+  filter: blur(100%);
 }
 
 .hero-content {
+  position: relative;
+  z-index: 10;
     height: calc(100% - 75px);
     display: flex;
     justify-content: center;
@@ -114,9 +127,30 @@ h5 {
     flex-direction: column;
 }
 
+.video-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .hero-content img {
     max-height: 90%;
     max-width: 90%;
+    animation: heroImage 2s;
+    animation-delay: 4s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heroImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-indication {
@@ -165,12 +199,6 @@ h5 {
   align-items: center;
 }
 
-.hero-scroll p {
-  color: white;
-  animation: scroll 4s infinite;
-  animation-delay: 2s;
-}
-
 @keyframes scroll {
   0% {
     transform: translateY(0);
@@ -190,6 +218,14 @@ h5 {
 }
 
 @media screen and (max-width: 655px) {
+  .hero-scroll p {
+    font-size: 0.75rem;
+    color: white;
+    margin-right: -48px;
+    animation: scroll 4s infinite;
+    animation-delay: 2s;
+  }
+
   section {
     padding-top: 115px !important;
   }
@@ -219,7 +255,66 @@ h5 {
     height: 75px;
   }
 
-  header:hover nav .nav-bottom p{
+  .nav-dots {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-dot {
+    height: 2px;
+    width: 20px;
+    background: white;
+    margin-bottom: 2px;
+    margin-bottom: 2px;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .nav-dots div:nth-child(1) {
+    animation: dotOne 4s infinite;
+  }
+  .nav-dots div:nth-child(2) {
+    animation: dotTwo 4s infinite;
+  }
+  .nav-dots div:nth-child(3) {
+    animation: dotThree 4s infinite;
+  }
+
+  @keyframes dotOne {
+    0% {
+      transform: translate(0px);
+    }
+    25% {
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      transform: translate(0px);
+    }
+  }
+  @keyframes dotTwo {
+    12% {
+      transform: translate(0px);
+    }
+    27% {
+      transform: translate(-5px, 0px);
+    }
+    52% {
+      transform: translate(0px);
+    }
+  }
+  @keyframes dotThree {
+    14% {
+      transform: translate(0px);
+    }
+    29% {
+      transform: translate(-5px, 0px);
+    }
+    54% {
+      transform: translate(0px);
+    }
+  }
+
+  header:hover .nav-dot{
     opacity: 0;
   }
 
@@ -261,7 +356,8 @@ h5 {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-end;
+      margin-right: 24px;
       box-sizing: border-box;
   }
 
@@ -272,6 +368,12 @@ h5 {
 }
 
 @media screen and (min-width: 655px) {
+  .hero-scroll p {
+    color: white;
+    animation: scroll 4s infinite;
+    animation-delay: 2s;
+  }
+
   .main-footer {
       width: calc(100% - 75px);
       margin-left: 75px;
@@ -294,7 +396,67 @@ h5 {
     width: 550px;
   }
 
-  header:hover nav .nav-bottom p{
+  .nav-dots {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .nav-dot {
+    height: 2px;
+    width: 20px;
+    background: white;
+    margin-bottom: 2px;
+    margin-bottom: 2px;
+    opacity: 1;
+    transition: all 0.5s;
+  }
+
+  .nav-dots div:nth-child(1) {
+    animation: dotOne 4s infinite;
+  }
+  .nav-dots div:nth-child(2) {
+    animation: dotTwo 4s infinite;
+  }
+  .nav-dots div:nth-child(3) {
+    animation: dotThree 4s infinite;
+  }
+
+  @keyframes dotOne {
+    0% {
+      transform: translate(0px);
+    }
+    25% {
+      transform: translate(0px, -10px);
+    }
+    50% {
+      transform: translate(0px);
+    }
+  }
+  @keyframes dotTwo {
+    12% {
+      transform: translate(0px);
+    }
+    27% {
+      transform: translate(0px, -10px);
+    }
+    52% {
+      transform: translate(0px);
+    }
+  }
+  @keyframes dotThree {
+    14% {
+      transform: translate(0px);
+    }
+    29% {
+      transform: translate(0px, -10px);
+    }
+    54% {
+      transform: translate(0px);
+    }
+  }
+
+  header:hover .nav-dot{
     opacity: 0;
   }
 
@@ -347,55 +509,6 @@ h5 {
 
 .nav-bottom {
   position: relative;
-}
-
-.nav-dots {
-  display: flex;
-  flex-direction: row;
-}
-
-.nav-dots p:nth-child(1) {
-  animation: dotOne 1s infinite;
-}
-.nav-dots p:nth-child(2) {
-  animation: dotTwo 1s infinite;
-}
-.nav-dots p:nth-child(3) {
-  animation: dotThree 1s infinite;
-}
-
-@keyframes dotOne {
-  0% {
-    transform: translate(0px);
-  }
-  50% {
-    transform: translate(0px, -10px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
-@keyframes dotTwo {
-  10% {
-    transform: translate(0px);
-  }
-  60% {
-    transform: translate(0px, -10px);
-  }
-  100% {
-    transform: translate(0px);
-  }
-}
-@keyframes dotThree {
-  20% {
-    transform: translate(0px);
-  }
-  70% {
-    transform: translate(0px, -10px);
-  }
-  100% {
-    transform: translate(0px);
-  }
 }
 
 .nav-items{
