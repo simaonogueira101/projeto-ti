@@ -589,7 +589,7 @@ header:hover nav .nav-items {
       width: 100%;
       box-sizing: border-box;
       position: relative;
-      margin-top: 24px;
+      margin-top: -24px;
   }
   section {
     min-height: 100vh;
@@ -637,6 +637,11 @@ header:hover nav .nav-items {
 .container-right a {
   text-decoration: none;
   display: inline-block;
+}
+
+.container-right iframe {
+  min-height: 300px;
+  margin-bottom: -5px;
 }
 
 .container-subtitle {
