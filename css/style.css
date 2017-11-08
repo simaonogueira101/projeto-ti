@@ -114,7 +114,6 @@ h5 {
   transform: translate(-50%, -50%);
   min-width: 100%;
   min-height: 100vh;
-  filter: blur(100%);
 }
 
 .hero-content {
@@ -291,6 +290,7 @@ h5 {
       transform: translate(0px);
     }
   }
+
   @keyframes dotTwo {
     12% {
       transform: translate(0px);
@@ -302,6 +302,7 @@ h5 {
       transform: translate(0px);
     }
   }
+
   @keyframes dotThree {
     14% {
       transform: translate(0px);
@@ -433,6 +434,7 @@ h5 {
       transform: translate(0px);
     }
   }
+
   @keyframes dotTwo {
     12% {
       transform: translate(0px);
@@ -444,6 +446,7 @@ h5 {
       transform: translate(0px);
     }
   }
+  
   @keyframes dotThree {
     14% {
       transform: translate(0px);
@@ -469,13 +472,7 @@ h5 {
   }
 
   .exit-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 0%;
-    opacity: 0;
-    background: #F5F5F5;
-    transition: width 1s, opacity 1s;
+    display: none;
   }
 
   .nav-top {
@@ -512,15 +509,13 @@ h5 {
 }
 
 .nav-items{
-  pointer-events: none;
   position: absolute;
   top: 0;
   height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   opacity: 0;
-  left: -100px;
+  left: -300px;
   transition: all 0.2s;
 }
 
@@ -540,7 +535,6 @@ a:hover .link-line{
 }
 
 header:hover nav .nav-items {
-  pointer-events: all;
   opacity: 1;
   transition: all 1s;
   transition-delay: 0.5s;
@@ -589,7 +583,6 @@ header:hover nav .nav-items {
       width: 100%;
       box-sizing: border-box;
       position: relative;
-      margin-top: -24px;
   }
   section {
     min-height: 100vh;
@@ -926,7 +919,7 @@ header:hover nav .nav-items {
 
 .card-top {
   height: 350px;
-  background-image: url("../images/hammer-title-photo.JPG");
+  background-image: url("../images/hammer-title-photo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
