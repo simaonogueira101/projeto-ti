@@ -283,42 +283,6 @@ h5 {
     animation: dotThree 4s infinite;
   }
 
-  @keyframes dotOne {
-    0% {
-      transform: translate(0px);
-    }
-    25% {
-      transform: translate(-5px, 0px);
-    }
-    50% {
-      transform: translate(0px);
-    }
-  }
-
-  @keyframes dotTwo {
-    12% {
-      transform: translate(0px);
-    }
-    27% {
-      transform: translate(-5px, 0px);
-    }
-    52% {
-      transform: translate(0px);
-    }
-  }
-
-  @keyframes dotThree {
-    14% {
-      transform: translate(0px);
-    }
-    29% {
-      transform: translate(-5px, 0px);
-    }
-    54% {
-      transform: translate(0px);
-    }
-  }
-
   header:hover .nav-dot{
     opacity: 0;
   }
@@ -418,49 +382,13 @@ h5 {
   }
 
   .nav-dots div:nth-child(1) {
-    animation: dotOne 4s infinite;
+    animation: dotOneH 4s infinite;
   }
   .nav-dots div:nth-child(2) {
-    animation: dotTwo 4s infinite;
+    animation: dotTwoH 4s infinite;
   }
   .nav-dots div:nth-child(3) {
-    animation: dotThree 4s infinite;
-  }
-
-  @keyframes dotOne {
-    0% {
-      transform: translate(0px);
-    }
-    25% {
-      transform: translate(0px, -10px);
-    }
-    50% {
-      transform: translate(0px);
-    }
-  }
-
-  @keyframes dotTwo {
-    12% {
-      transform: translate(0px);
-    }
-    27% {
-      transform: translate(0px, -10px);
-    }
-    52% {
-      transform: translate(0px);
-    }
-  }
-
-  @keyframes dotThree {
-    14% {
-      transform: translate(0px);
-    }
-    29% {
-      transform: translate(0px, -10px);
-    }
-    54% {
-      transform: translate(0px);
-    }
+    animation: dotThreeH 4s infinite;
   }
 
   header:hover .nav-dot{
@@ -508,6 +436,78 @@ h5 {
   }
 }
 
+@keyframes dotOne {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes dotTwo {
+  12% {
+    transform: translate(0px);
+  }
+  27% {
+    transform: translate(-5px, 0px);
+  }
+  52% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes dotThree {
+  14% {
+    transform: translate(0px);
+  }
+  29% {
+    transform: translate(-5px, 0px);
+  }
+  54% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes dotOneH {
+  0% {
+    transform: translate(0px);
+  }
+  25% {
+    transform: translate(0px, -10px);
+  }
+  50% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes dotTwoH {
+  12% {
+    transform: translate(0px);
+  }
+  27% {
+    transform: translate(0px, -10px);
+  }
+  52% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes dotThreeH {
+  14% {
+    transform: translate(0px);
+  }
+  29% {
+    transform: translate(0px, -10px);
+  }
+  54% {
+    transform: translate(0px);
+  }
+}
+
 .nav-bottom {
   position: relative;
 }
@@ -518,9 +518,16 @@ h5 {
   height: 100%;
   display: flex;
   align-items: center;
+  flex-direction: column;
+  justify-content: center;
   opacity: 0;
   left: -300px;
   transition: all 0.2s;
+}
+
+.nav-items h3 {
+  align-self: flex-start;
+  margin-bottom: -4px;
 }
 
 .nav-items ul li{
