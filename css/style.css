@@ -759,7 +759,6 @@ a:hover .link-line{
   height: 100%;
   flex: 0 0 auto;
   position: relative;
-  background-image: url("../images/team/team.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -788,7 +787,7 @@ a:hover .link-line{
   padding: 20px;
     padding-left: 20px;
     padding-right: 80px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
@@ -1249,4 +1248,8 @@ blockquote:before, blockquote:after {
 
 .invisible {
   display: none;
+}
+
+.margin-none {
+  margin: 0;
 }

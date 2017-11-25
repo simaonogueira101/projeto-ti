@@ -59,6 +59,7 @@ function editText() {
 
   title = textObject.feed.entry[sheetsArticleNumber].gsx$title.$t
   document.getElementById("article-title").innerHTML = title;
+  document.title = title;
 
   subtitle = textObject.feed.entry[sheetsArticleNumber].gsx$subtitle.$t
 
