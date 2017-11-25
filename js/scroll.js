@@ -56,6 +56,7 @@ function scrollLeft() {
   }
 }
 
+////////////////////////////////////////////////////////////////////////////////
 
 // Dinamically GETs article cards to display on scroll
 
@@ -87,6 +88,8 @@ function editScroll() {
   var scrollTotal = textObject.feed.entry.length;
   // console.log(scrollTotal);
 
+  var colorChoice = 0;
+
   for( var i = 0; i < scrollTotal; i++) {
     title = textObject.feed.entry[i].gsx$title.$t
     date = textObject.feed.entry[i].gsx$date.$t
@@ -112,7 +115,18 @@ function editScroll() {
 
     outter.classList.add('news-item-link');
     inner.classList.add('news-item');
-    overlay.classList.add('news-item-overlay', 'news-item-orange');
+
+    if(colorChoice == 0) {
+      overlay.classList.add('news-item-overlay', 'news-item-orange');
+      colorChoice = 1;
+    } else if(colorChoice == 1) {
+      overlay.classList.add('news-item-overlay', 'news-item-purple');
+      colorChoice = 2;
+    } else if(colorChoice == 2) {
+      overlay.classList.add('news-item-overlay', 'news-item-blue');
+      colorChoice = 0;
+    }
+
     p.classList.add('text-6', 'margin-none');
     pDate.classList.add('text-7', 'margin-none');
 
