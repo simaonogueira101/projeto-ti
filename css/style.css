@@ -59,6 +59,11 @@ ul {
     margin-top: 24px;
     margin-bottom: 48px;
 }
+.text-news-title {
+  font-size: 5vw;
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
 
 h1 {
     font-family: 'Press Start 2P', cursive;
@@ -103,7 +108,7 @@ h5 {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: 2;
+    z-index: 3;
     overflow: hidden;
 }
 
@@ -259,16 +264,22 @@ h5 {
       display: flex;
       flex-direction: column;
       box-sizing: border-box;
-      z-index: 1;
+      z-index: 2;
       transition: height 1s;
   }
-  header:hover {
+  header.active-mobile {
     height: 100%;
   }
 
-  header:hover .exit-nav {
+  header.active-mobile .exit-nav {
     opacity: 1;
     height: 75px;
+  }
+
+  header.active-mobile nav .nav-items {
+    opacity: 1;
+    transition: all 1s;
+    transition-delay: 0.5s;
   }
 
   .nav-dots {
@@ -296,7 +307,7 @@ h5 {
     animation: dotThree 4s infinite;
   }
 
-  header:hover .nav-dot{
+  header.active-mobile .nav-dot{
     opacity: 0;
   }
 
@@ -375,12 +386,18 @@ h5 {
       display: flex;
       flex-direction: row;
       box-sizing: border-box;
-      z-index: 1;
+      z-index: 2;
       transition: width 1s, height 1s;
   }
 
   header:hover {
     width: 550px;
+  }
+
+  header:hover nav .nav-items {
+    opacity: 1;
+    transition: all 1s;
+    transition-delay: 0.5s;
   }
 
   .nav-dots {
@@ -567,13 +584,7 @@ a:hover .link-line{
   width: 100%;
 }
 
-header:hover nav .nav-items {
-  opacity: 1;
-  transition: all 1s;
-  transition-delay: 0.5s;
-}
-
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 655px) {
   header:hover nav .nav-items {
     left: 80px;
   }
@@ -583,8 +594,8 @@ header:hover nav .nav-items {
     display: inline-block;
   }
 }
-@media screen and (max-width: 500px) {
-  header:hover nav .nav-items {
+@media screen and (max-width: 655px) {
+  header.active-mobile nav .nav-items {
     left: 10px;
   }
   .nav-items ul li a{
@@ -722,6 +733,25 @@ header:hover nav .nav-items {
   flex-direction: row;
   height: 225px;
   overflow: scroll;
+}
+
+.news-scroll-container {
+  height: 265px;
+  position: relative;
+}
+
+.news-hover {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  top: 0;
+  z-index: 1;
+}
+.news-hover.left {
+  left: 0;
+}
+.news-hover.right {
+  right: 0;
 }
 
 .news-item {
@@ -1050,6 +1080,10 @@ header:hover nav .nav-items {
   margin-left: 2px;
 }
 
+.section-news-each h4{
+  color: #363636;
+}
+
 .section-news-each article{
   margin-bottom: 60px;
 }
@@ -1124,10 +1158,11 @@ header:hover nav .nav-items {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .section-article article .article-image{
-  background-image: url("../images/team/team.jpg");
+  /*background-image: url("../images/team/team.jpg");*/
   background-position: center;
   background-size: cover;
   height: 400px;
@@ -1146,6 +1181,7 @@ blockquote {
   font-size: 1.2rem;
   margin-top: 24px;
   margin-bottom: 24px;
+  text-align: center;
 }
 
 blockquote:before, blockquote:after {

@@ -21,7 +21,7 @@ window.onscroll = function (oEvent) {
     document.getElementById("main").classList.add("active");
     setTimeout(function(){
        document.getElementById("hero-indication").classList.add("invisible");
-    }, 800);
+    }, 1000);
     if(scrolled == 0) {
       scroll();
     }
@@ -30,8 +30,6 @@ window.onscroll = function (oEvent) {
   // Second Stage
   if(scrollPos >= welcomePos) {
     if(scrolled == 1) {
-      document.getElementById("hero").classList.add("invisible");
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
       scrolled = 2;
     }
   }

@@ -8,10 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
-<body>
-  <header>
-      <nav>
+<body id="body">
+  <header id="nav">
+      <nav onclick="mobileNavAdd()">
           <div class="nav-top">
               <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
           </div>
@@ -58,12 +59,12 @@
               </div>
           </div>
       </nav>
-      <div class="exit-nav">
+      <div class="exit-nav" onclick="mobileNavRemove()">
         <p class="press-start">x</p>
       </div>
   </header>
 
-  <div class="main-footer">
+  <div class="main-footer" id="main">
     <main>
         <section class="section-news">
           <div class="title">
@@ -296,5 +297,7 @@
         </div>
     </footer>
   </div>
+  <script src="js/mobile-nav.js"></script>
+  <script src="js/header-non-home.js"></script>
 </body>
 </html>

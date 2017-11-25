@@ -9,11 +9,11 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
-<body>
-  <header>
-      <nav>
+<body id="body">
+  <header id="nav">
+      <nav onclick="mobileNavAdd()">
           <div class="nav-top">
-              <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
+              <img src="../../images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
           </div>
           <div class="nav-bottom">
             <div class="nav-dots">
@@ -58,12 +58,12 @@
               </div>
           </div>
       </nav>
-      <div class="exit-nav">
+      <div class="exit-nav" onclick="mobileNavRemove()">
         <p class="press-start">x</p>
       </div>
   </header>
 
-  <div class="main-footer">
+  <div class="main-footer" id="main">
     <main>
         <section class="section-about">
           <h3 class="dark-orange-text text-6">What's this, you ask?</h3>
@@ -180,5 +180,7 @@
         </div>
     </footer>
   </div>
+  <script src="js/header-non-home.js"></script>
+  <script src="js/mobile-nav.js"></script>
 </body>
 </html>
