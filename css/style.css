@@ -1257,7 +1257,7 @@ blockquote:before, blockquote:after {
 }
 
 button {
-  padding: 12px;
+  height: 66px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1265,16 +1265,10 @@ button {
   border: none;
   border-radius: 0px;
   color: #EB6B32;
-  transition: all 0.2s;
+  transition: all 0.3s;
   width: 100%;
-  box-sizing: border-box;
-  border: 2px solid #EB6B32;
-}
-
-button:hover {
-  color: #CE410B;
-  border: 2px solid #CE410B;
-
+  cursor: pointer;
+  background-color: white;
 }
 
 .about-main {
@@ -1305,10 +1299,57 @@ button:hover {
   display: flex;
   flex-direction: column;
   position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-exit:hover {
+  font-size: 120%;
 }
 
 .contact-form button {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+#contact-button {
+  box-sizing: border-box;
+  border: 2px solid #EB6B32;
+  position: relative;
+  transition: all 0.3s;
+  left: 0px;
+  top: 0px;
+}
+#contact-button:hover {
+  left: 5px;
+  top: -5px;
+}
+
+.form {
+  width: 70%;
+  max-width: 500px;
+}
+input, textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  resize: none;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  border-color: #F5F5F5;
+}
+input {
+  height: 32px;
+}
+textarea {
+  height: 96px;
+}
+label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.field {
+  margin-top: 24px;
 }
