@@ -4,8 +4,8 @@ var path = window.location.pathname;
 var page = path.split("/").pop();
 var article = path.split("article").pop();
 var articleNumber = article.substring(0, article.length - 5);
-console.log(article);
-console.log(articleNumber);
+// console.log(article);
+// console.log(articleNumber);
 var sheetsArticleNumber = articleNumber - 1;
 // console.log("Sheeets Article Number: " + sheetsArticleNumber);
 

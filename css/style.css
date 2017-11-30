@@ -1303,8 +1303,8 @@ button {
   align-items: center;
 }
 
-#contact-exit:hover {
-  font-size: 120%;
+button:hover {
+  font-size: 105%;
 }
 
 .contact-form button {
@@ -1320,10 +1320,6 @@ button {
   transition: all 0.3s;
   left: 0px;
   top: 0px;
-}
-#contact-button:hover {
-  left: 5px;
-  top: -5px;
 }
 
 .form {
