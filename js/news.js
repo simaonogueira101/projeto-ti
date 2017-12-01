@@ -70,7 +70,7 @@ function editScroll() {
     containerRight.appendChild(newsLink);
 
     var articleNumberReal = i + 1;
-    var link = "sections/news-article/article" + articleNumberReal + ".html";
+    var link = "sections/news-article/article.html?id=" + articleNumberReal;
     // console.log(link);
     newsLink.setAttribute('href', link);
 

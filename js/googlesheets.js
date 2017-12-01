@@ -1,12 +1,22 @@
 var xmlhttp = new XMLHttpRequest();
 
+let urlParams = (new URL(document.location)).searchParams;
+let id = urlParams.get("id");
+// console.log(id);
+
+// Deprecated in favor of using Query Strings to identify article.
+/*
 var path = window.location.pathname;
 var page = path.split("/").pop();
 var article = path.split("article").pop();
 var articleNumber = article.substring(0, article.length - 5);
 // console.log(article);
 // console.log(articleNumber);
-var sheetsArticleNumber = articleNumber - 1;
+*/
+//////////////////////////////////////////////////////////////////
+
+var articleNumber = id;
+var sheetsArticleNumber = id - 1;
 // console.log("Sheeets Article Number: " + sheetsArticleNumber);
 
 var originalText;
