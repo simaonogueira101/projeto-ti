@@ -16,31 +16,54 @@
     <main class="about-main">
       <div class="contact-overlay invisible" id="contact">
         <div class="contact-form">
-          <div class="form">
+
+          <form class="form" action="about.php?contact=true" method="POST">
             <div class="field">
               <label class="press-start">Name</label>
               <div class="control">
-                <input class="input" type="text" placeholder="Your Name">
+                <input class="input" type="text" placeholder="Your Name" name="name">
               </div>
             </div>
 
             <div class="field">
               <label class="press-start">Email</label>
               <div class="control">
-                <input class="input" type="text" placeholder="youremail@yourprovider.com">
+                <input class="input" type="text" placeholder="youremail@yourprovider.com" name="email">
               </div>
             </div>
 
             <div class="field">
               <label class="press-start">Message</label>
               <div class="control">
-                <textarea class="textarea" placeholder="Hello 8Bit Forgers!"></textarea>
+                <textarea class="textarea" placeholder="Hello 8Bit Forgers!" name="message"></textarea>
               </div>
             </div>
-          </div>
-          <button class="text-6 text-bold press-start" id="contact-exit" onclick="contactOpen()">
+
+            <div class="field">
+              <div class="control">
+                <input type="submit">
+              </div>
+            </div>
+          </form>
+
+          <?php
+          include 'php/config.php';
+
+          $to      = $EMAIL;
+          $subject = 'Contacto de ' . $_POST['name'];
+          $message = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
+          $headers = 'From: hello@8bit.com' . "\r\n" .
+                     'Reply-To: hello@8bit.com' . "\r\n" .
+                     'X-Mailer: PHP/' . phpversion();
+
+          if (isset($_POST['message'])) {
+            mail($to, $subject, $message, $headers);
+          }
+          ?>
+
+          <a class="text-6 text-bold press-start contact-button exit-button" id="contact-exit" href="about.php?contact=false">
             x
-          </button>
+          </a>
         </div>
       </div>
         <section class="section-about">
@@ -64,9 +87,9 @@
                         Programming, Graphics Design and Marketing and are developing our very first prototype as a team: Biomorphs.
                     </p>
                     <br>
-                    <button class="text-bold text-6" id="contact-button" onclick="contactOpen()">
+                    <a class="text-bold text-6 contact-button" id="contact-button" href="about.php?contact=true">
                       Get in touch!
-                    </button>
+                    </a>
                     <br>
                 </div>
                 <div class="container-right container-height">
@@ -125,6 +148,6 @@
   </div>
   <script src="js/header-non-home.js"></script>
   <script src="js/mobile-nav.js"></script>
-  <script src="js/contact.js"></script>
+  <script src="js/about.js"></script>
 </body>
 </html>
