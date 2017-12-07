@@ -10,58 +10,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body id="body">
-  <header id="nav">
-      <nav onclick="mobileNavAdd()">
-          <div class="nav-top">
-              <img src="images/hammer-title.png" alt="nav-logo" title="Navbar logo" class="nav-logo">
-          </div>
-          <div class="nav-bottom">
-            <div class="nav-dots">
-              <div class="nav-dot"></div>
-              <div class="nav-dot"></div>
-              <div class="nav-dot"></div>
-            </div>
-              <div class="nav-items">
-                <h3 class="dark-orange-text ligth-text text-thin text-6">Links...</h3>
-                <ul>
-                    <li>
-                        <a href="index.html" class="light-text text-2 press-start">
-                          Home
-                          <div class="link-line"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="portfolio.html" class="light-text text-2 press-start">
-                          Portfolio
-                          <div class="link-line"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="news.html" class="light-text text-2 press-start">
-                          News
-                          <div class="link-line"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="team.html" class="light-text text-2 press-start">
-                          Team
-                          <div class="link-line"></div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="light-text text-2 press-start">
-                          About
-                          <div class="link-line"></div>
-                        </a>
-                    </li>
-                </ul>
-              </div>
-          </div>
-      </nav>
-      <div class="exit-nav" onclick="mobileNavRemove()">
-        <p class="press-start">x</p>
-      </div>
-  </header>
+  <?php include 'sections/header-footer/header.html'; ?>
 
   <div class="main-footer section-team" id="main">
     <main>
@@ -115,7 +64,7 @@
                                       labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                       labore et dolore magna aliqua.
                                   </p>
-                                  <a href="sections/teams-team/team1.html" class="light-text text-7">
+                                  <a href="sections/teams-team/team1.php" class="light-text text-7">
                                     Learn more...
                                     <div class="link-line"></div>
                                   </a>
@@ -146,7 +95,7 @@
                                       labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                       labore et dolore magna aliqua.
                                   </p>
-                                  <a href="sections/teams-team/team1.html" class="light-text text-7">
+                                  <a href="sections/teams-team/team1.php" class="light-text text-7">
                                     Learn more...
                                     <div class="link-line"></div>
                                   </a>
@@ -177,7 +126,7 @@
                                       labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                                       labore et dolore magna aliqua.
                                   </p>
-                                  <a href="sections/teams-team/team1.html" class="light-text text-7">
+                                  <a href="sections/teams-team/team1.php" class="light-text text-7">
                                     Learn more...
                                     <div class="link-line"></div>
                                   </a>
@@ -196,48 +145,8 @@
       </section>
     </main>
 
-    <footer class="section-footer">
-        <h3 class="dark-orange-text text-6">What, when, who.</h3>
-        <h1 class="light-text text-large">Contacts</h1>
-        <div class="container container-height">
-            <div class="container-left container-footer-left">
-                <p class="light-text text-6 text-bold">
-                    Where are we?
-                </p>
-                <p class="light-text text-6 text-thin">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.
-                </p>
-                <div>
-                    <p class="light-text text-6 text-bold">
-                        Get in touch!
-                    </p>
-                    <p class="light-text text-thin text-6">
-                        Leo Phillips
-                        <br>
-                        3372 Hegmann Locks Suite 593
-                        <br>
-                        210-837-5134
-                    </p>
-                </div>
-                <div>
-                    <p class="light-text text-6 text-bold">
-                        Social
-                    </p>
-                    <a href="https://www.facebook.com/8BITFORGERS/" target="_blank" >
-                        <img src="images/social/facebook.svg" alt="facebook-logo" title="Facebook Logo">
-                    </a>
-                    <a href="https://twitter.com/8BitForgers" target="_blank">
-                        <img src="images/social/twitter.svg" alt="twitter-logo" title="Twitter Logo">
-                    </a>
-                </div>
-            </div>
-            <div class="container-right">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.0193876971002!2d-8.418272583756739!3d40.18638197939246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd22f9952c96b155%3A0x6300a2269c33d7c5!2sDEI!5e0!3m2!1spt-PT!2spt!4v1506527608149" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
-            </div>
-        </div>
-    </footer>
+    <?php include 'sections/header-footer/footer.html'; ?>
+
   </div>
   <script src="js/header-non-home.js"></script>
   <script src="js/mobile-nav.js"></script>
