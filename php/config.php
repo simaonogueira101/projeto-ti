@@ -1,6 +1,6 @@
 <?php
   //Local
-  $EMAIL = 'simao.nogueira66@gmail.com';
+  $EMAIL = '$mail->send()';
 
   //Deploy
   //$EMAIL = getenv('8BitEmail');

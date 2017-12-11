@@ -10,44 +10,48 @@
       <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body id="body">
+    
     <?php include 'sections/header-footer/header.html'; ?>
 
     <div class="main-footer main-login" id="main">
-        <main class="main-admin">
-          <div class="contact-form">
+      <form action="admin-login.php?login=false" method="POST">
+          <main class="main-admin">
+            <div class="contact-form">
+              <?php
+                include 'php/login.php';
+              ?>
 
-            <?php
-              include 'php/login.php';
-            ?>
+              <h3 class="dark-orange-text text-1 press-start title">Login</h3>
 
-            <h3 class="dark-orange-text text-1 press-start title">Login</h3>
+              <div class="form">
+                <div class="field">
+                  <div class="control">
+                    <input name="username" type="text" placeholder="username">
+                  </div>
+                </div>
 
-            <div class="form">
-              <div class="field">
-                <div class="control">
-                  <input class="user" type="text" placeholder="username">
+                <div class="field">
+                  <div class="control">
+                    <input name="password" type="text" placeholder="password">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <input class="submit" type="submit">
+                  </div>
                 </div>
               </div>
-
-              <div class="field">
-                <div class="control">
-                  <input class="password" type="text" placeholder="password">
-                </div>
-              </div>
-
-              <div class="field">
-                <div class="control">
-                  <input class="submit" type="submit">
-                </div>
-              </div>
+              <div class="invisible" id="error">Username or Password don't match/exist...</div>
             </div>
-          </div>
-        </main>
+          </main>
+        </form>
 
         <?php include 'sections/header-footer/footer.html'; ?>
 
     </div>
     <script src="js/mobile-nav.js"></script>
     <script src="js/header-non-home.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
