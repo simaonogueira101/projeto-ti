@@ -55,10 +55,7 @@
           $headers = 'From: hello@8bit.com' . "\r\n" .
                      'Reply-To: hello@8bit.com' . "\r\n" .
                      'X-Mailer: PHP/' . phpversion();
-
-          if (isset($_POST['message'])) {
-            mail($to, $subject, $message, $headers);
-          }
+          mail($to, $subject, $message, $headers);
           ?>
 
           <a class="text-6 text-bold press-start contact-button exit-button" id="contact-exit" href="about.php?contact=false">
