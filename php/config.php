@@ -4,4 +4,5 @@
 
   //Deploy
   $EMAIL = getenv('8BitEmail');
+  echo $EMAIL;
 ?>
