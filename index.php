@@ -12,7 +12,17 @@
 <body id="body">
     <?php include 'sections/header-footer/header.html'; ?>
 
-    
+    <?php
+    /*
+      $dbopts = parse_url(getenv('DATABASE_URL'));
+
+      $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
+      $dbconn4 = pg_connect($conn_string);
+      //connect to a database named "test" on the host "sheep" with a username and password
+    */
+    echo getenv('DATABASE_URL');
+    echo "hello!";
+    ?>
 
     <div class="hero" id="hero">
         <video src="videos/insurrection.mp4" autoplay muted loop class="hero-video"></video>
