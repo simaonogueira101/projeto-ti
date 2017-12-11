@@ -41,6 +41,11 @@
     $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
     // $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
     echo $conn_string;
+    $dbconn = pg_connect($conn_string);
+    $result = pg_query($dbconn, "SELECT * FROM products");
+    echo "<br>";
+    echo "<br>";
+    echo $result;
     echo "<br>";
     echo "<br>";
     echo "hello!";
