@@ -35,7 +35,7 @@
       $mail->setFrom('hello@8bit.com', 'Mailer');
       $mail->addAddress($EMAIL, $_POST['name']);     // Add a recipient
       //$mail->addAddress('ellen@example.com');               // Name is optional
-      $mail->addReplyTo('hello@8bit.com', 'Information');
+      $mail->addReplyTo($myEmail, 'Information');
       $mail->addCC('cc@example.com');
       $mail->addBCC('bcc@example.com');
 
