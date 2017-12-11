@@ -19,7 +19,8 @@
   $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
   try {
       //Server settings
-      $mail->SMTPDebug = 2;                                 // Enable verbose debug output
+      $mail->CharSet = "UTF-8"; // To support special characters in SMTP mail
+      //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
       $mail->isSMTP();                                      // Set mailer to use SMTP
       $mail->Host = "ssl://stmp.gmail.com";  // Specify main and backup SMTP servers
       $mail->SMTPAuth = true;
