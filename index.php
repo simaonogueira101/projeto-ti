@@ -12,6 +12,22 @@
 <body id="body">
     <?php include 'sections/header-footer/header.html'; ?>
 
+    <?php
+      $dbopts = parse_url(getenv('DATABASE_URL'));
+      $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
+                   array(
+                    'pdo.server' => array(
+                       'driver'   => 'pgsql',
+                       'user' => $dbopts["user"],
+                       'password' => $dbopts["pass"],
+                       'host' => $dbopts["host"],
+                       'port' => $dbopts["port"],
+                       'dbname' => ltrim($dbopts["path"],'/')
+                       )
+                   )
+      );
+    ?>
+
     <div class="hero" id="hero">
         <video src="videos/insurrection.mp4" autoplay muted loop class="hero-video"></video>
         <div class="video-blur"></div>
