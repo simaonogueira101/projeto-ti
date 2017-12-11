@@ -52,11 +52,11 @@
   $mail->Subject = $subject;
   //Read an HTML message body from an external file, convert referenced images to embedded,
   //convert HTML into a basic plain-text alternative body
-  //$mail->msgHTML(file_get_contents('contents.html'), __DIR__);
+  $mail->msgHTML(file_get_contents('contents.html'), __DIR__);
   //Replace the plain text body with one created manually
   $mail->AltBody = $message;
   //Attach an image file
-  //$mail->addAttachment('images/phpmailer_mini.png');
+  $mail->addAttachment('images/phpmailer_mini.png');
   //send the message, check for errors
   if (!$mail->send()) {
       echo "Mailer Error: " . $mail->ErrorInfo;

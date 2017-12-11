@@ -48,9 +48,11 @@
 
           <?php
 
-            include 'php/config.php';
             $subject = 'Contacto de ' . $_POST['name'];
             $message = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
+            include 'php/config.php';
+
+            $mail->send()
 
             /*
 
