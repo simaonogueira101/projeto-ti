@@ -13,42 +13,14 @@
     <?php include 'sections/header-footer/header.html'; ?>
 
     <?php
-    /*
-      $dbopts = parse_url(getenv('DATABASE_URL'));
+      $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
+      $dbconn = pg_connect($conn_string);
+      $result = pg_query($dbconn, "SELECT * FROM products");
 
-      $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
-      $dbconn4 = pg_connect($conn_string);
-      //connect to a database named "test" on the host "sheep" with a username and password
-    */
-    echo getenv('DATABASE_URL');
-    echo "<br>";
-    echo "<br>";
-    $dbopts = parse_url(getenv('DATABASE_URL'));
-    echo $dbopts;
-    echo "<br>";
-    echo "<br>";
-    echo $dbopts["host"];
-    echo "<br>";
-    echo $dbopts["port"];
-    echo "<br>";
-    echo ltrim($dbopts["path"],'/');
-    echo "<br>";
-    echo $dbopts["user"];
-    echo "<br>";
-    echo $dbopts["pass"];
-    echo "<br>";
-    echo "<br>";
-    $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
-    // $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
-    echo $conn_string;
-    $dbconn = pg_connect($conn_string);
-    $result = pg_query($dbconn, "SELECT * FROM products");
-    echo "<br>";
-    echo "<br>";
-    echo $result;
-    echo "<br>";
-    echo "<br>";
-    echo "hello!";
+      while ($row = pg_fetch_row($result)) {
+        echo "Author: $row[0]  E-mail: $row[1]";
+        echo "<br />\n";
+      }
     ?>
 
     <div class="hero" id="hero">
