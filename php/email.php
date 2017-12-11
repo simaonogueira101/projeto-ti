@@ -20,7 +20,7 @@
   try {
       //Server settings
       $mail->CharSet = "UTF-8"; // To support special characters in SMTP mail
-      //$mail->SMTPDebug = 2;                                 // Enable verbose debug output
+      $mail->SMTPDebug = 2;                                 // Enable verbose debug output
       $mail->isSMTP();                                      // Set mailer to use SMTP
       $mail->Host = "ssl://stmp.gmail.com";  // Specify main and backup SMTP servers
       $mail->SMTPAuth = true;
@@ -33,7 +33,7 @@
       $mail->Port = 587;                                    // TCP port to connect to
 
       //Recipients
-      $mail->setFrom('hello@8bit.com', 'Mailer');
+      $mail->setFrom($myEmail, 'Mailer');
       $mail->addAddress($EMAIL, $_POST['name']);     // Add a recipient
       //$mail->addAddress('ellen@example.com');               // Name is optional
       $mail->addReplyTo($myEmail, 'Information');
