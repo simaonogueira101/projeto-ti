@@ -13,7 +13,7 @@
   $rowResource = pg_query($dbconn, "SELECT count(*) AS exact_count FROM user_table");
   $rowCount = pg_fetch_result($rowResource, 0, 0);
   // echo $rowCount;
-  echo "<br/>";
+  //echo "<br/>";
 
   $USERNAME = $_POST["username"];
   $USERPASS = $_POST["password"];

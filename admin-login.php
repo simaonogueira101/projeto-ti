@@ -10,16 +10,16 @@
       <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body id="body">
-    
+
     <?php include 'sections/header-footer/header.html'; ?>
 
+    <?php
+      include 'php/login.php';
+    ?>
     <div class="main-footer main-login" id="main">
       <form action="admin-login.php?login=false" method="POST">
           <main class="main-admin">
             <div class="contact-form">
-              <?php
-                include 'php/login.php';
-              ?>
 
               <h3 class="dark-orange-text text-1 press-start title">Login</h3>
 
@@ -32,7 +32,7 @@
 
                 <div class="field">
                   <div class="control">
-                    <input name="password" type="text" placeholder="password">
+                    <input name="password" type="password" placeholder="password">
                   </div>
                 </div>
 
@@ -41,8 +41,9 @@
                     <input class="submit" type="submit">
                   </div>
                 </div>
+
+                <div class="invisible" id="error">Username and/or Password are invalid...</div>
               </div>
-              <div class="invisible" id="error">Username or Password don't match/exist...</div>
             </div>
           </main>
         </form>

@@ -19,7 +19,7 @@
           <h1 class="text-large">Our Project Portfolio</h1>
 
           <div class="card-flex">
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -39,7 +39,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -59,7 +59,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -79,7 +79,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -99,7 +99,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -119,7 +119,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -139,7 +139,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -159,7 +159,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
@@ -179,7 +179,7 @@
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-left">
               <img src="images/bits/corner-light.svg" alt="card-corner" class="corner-bottom-right">
             </a>
-            <a class="card" href="sections/portfolio-project/project1.html">
+            <a class="card" href="sections/portfolio-project/project1.php">
               <div class="card-inside">
                 <div class="card-top">
                 </div>
