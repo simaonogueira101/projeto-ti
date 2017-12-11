@@ -21,7 +21,16 @@
       //connect to a database named "test" on the host "sheep" with a username and password
     */
     echo getenv('DATABASE_URL');
-    echo parse_url(getenv('DATABASE_URL'));
+    echo "\n";
+    echo "\n";
+    $dbopts = parse_url(getenv('DATABASE_URL'));
+    echo $dbopts;
+    echo "\n";
+    echo "\n";
+    $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
+    echo $conn_string;
+    echo "\n";
+    echo "\n";
     echo "hello!";
     ?>
 
