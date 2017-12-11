@@ -47,14 +47,7 @@
           </form>
 
           <?php
-
-            $subject = 'Contacto de ' . $_POST['name'];
-            $message = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
             include 'php/config.php';
-
-            $mail->send()
-
-            /*
 
             $to      = $EMAIL;
             $subject = 'Contacto de ' . $_POST['name'];
@@ -66,9 +59,6 @@
             if ($_POST['message']) {
               mail($to, $subject, $message, $headers);
             }
-
-            */
-
           ?>
 
           <a class="text-6 text-bold press-start contact-button exit-button" id="contact-exit" href="about.php?contact=false">
