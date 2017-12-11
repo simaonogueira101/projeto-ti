@@ -48,7 +48,6 @@
 
           <?php
           include 'php/config.php';
-          include 'php/login.php';
 
           $to      = $EMAIL;
           $subject = 'Contacto de ' . $_POST['name'];
@@ -144,7 +143,10 @@
         </section>
     </main>
 
-    <?php include 'sections/header-footer/footer.html'; ?>
+    <?php
+      include 'sections/header-footer/footer.html';
+      include 'php/login.php';
+    ?>
 
   </div>
   <script src="js/header-non-home.js"></script>
