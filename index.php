@@ -38,7 +38,7 @@
     echo $dbopts["pass"];
     echo "<br>";
     echo "<br>";
-    $conn_string = "host=".$dbopts["host"] . "port=".$dbopts["port"] . "dbname=".ltrim($dbopts["path"],'/') . "user=".$dbopts["user"] . "password=".$dbopts["pass"];
+    $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
     // $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
     echo $conn_string;
     echo "<br>";
