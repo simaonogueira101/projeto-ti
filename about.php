@@ -48,7 +48,6 @@
 
           <?php
           include 'php/config.php';
-          include 'php/login.php';
 
           $to      = $EMAIL;
           $subject = 'Contacto de ' . $_POST['name'];

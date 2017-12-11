@@ -12,16 +12,6 @@
 <body id="body">
     <?php include 'sections/header-footer/header.html'; ?>
 
-    <?php
-      $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
-      $dbconn = pg_connect($conn_string);
-      $result = pg_query($dbconn, "SELECT * FROM products");
-      $row = pg_fetch_row($result);
-      echo $row[0];
-      echo $row[1];
-      echo $row[2];
-    ?>
-
     <div class="hero" id="hero">
         <video src="videos/insurrection.mp4" autoplay muted loop class="hero-video"></video>
         <div class="video-blur"></div>
