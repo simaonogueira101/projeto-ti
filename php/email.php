@@ -21,7 +21,7 @@
       //Server settings
       $mail->SMTPDebug = 2;                                 // Enable verbose debug output
       $mail->isSMTP();                                      // Set mailer to use SMTP
-      $mail->Host = 'smtp1.example.com;smtp2.example.com';  // Specify main and backup SMTP servers
+      $mail->Host = "ssl://stmp.gmail.com";  // Specify main and backup SMTP servers
       $mail->SMTPAuth = true;                               // Enable SMTP authentication
       $mail->Username = getenv('8BitEmail');                 // SMTP username
       $mail->Password = getenv('8BitPassword');                           // SMTP password
@@ -45,7 +45,7 @@
       $mail->Subject = 'Contacto de ' . $_POST['name'];
       $mail->Body    = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
       $mail->AltBody = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
-      
+
       if ($_POST['message']) {
         $mail->send();
       }
