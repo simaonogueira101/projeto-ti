@@ -28,6 +28,15 @@
     echo "<br>";
     echo "<br>";
     echo $dbopts["host"];
+    echo "<br>";
+    echo $dbopts["port"];
+    echo "<br>";
+    echo ltrim($dbopts["path"],'/');
+    echo "<br>";
+    echo $dbopts["user"];
+    echo "<br>";
+    echo $dbopts["pass"];
+    echo "<br>";
     // $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
     echo $conn_string;
     echo "<br>";
