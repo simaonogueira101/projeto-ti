@@ -47,20 +47,18 @@
           </form>
 
           <?php
-            include 'php/email.php';
+            include 'php/config.php';
 
-            /*
             $to      = $EMAIL;
             $subject = 'Contacto de ' . $_POST['name'];
             $message = $_POST['message'] . "\n \n" . 'Responder para: ' . $_POST['email'];
-            $headers = 'From: hello@8bit.com' . "\r\n" .
-                       'Reply-To: hello@8bit.com' . "\r\n" .
+            $headers = 'From: ' . $_POST['email'] . "\r\n" .
+                       'Reply-To: ' . $_POST['email'] . "\r\n" .
                        'X-Mailer: PHP/' . phpversion();
 
             if ($_POST['message']) {
               mail($to, $subject, $message, $headers);
             }
-            */
           ?>
 
           <a class="text-6 text-bold press-start contact-button exit-button" id="contact-exit" href="about.php?contact=false">

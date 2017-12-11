@@ -1,6 +1,5 @@
 {
     "require": {
-        "herrera-io/silex-pdo": "^1.2",
-        "phpmailer/phpmailer": "^6.0"
+        "herrera-io/silex-pdo": "^1.2"
     }
 }
