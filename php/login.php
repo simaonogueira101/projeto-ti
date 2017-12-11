@@ -12,7 +12,7 @@
 
   $rowResource = pg_query($dbconn, "SELECT count(*) AS exact_count FROM user_table");
   $rowCount = pg_fetch_result($rowResource, 0, 0);
-  // echo $rowCount;
+  //echo $rowCount;
   //echo "<br/>";
 
   $USERNAME = $_POST["username"];
@@ -32,7 +32,8 @@
         echo "user " . $USERNAME;
         echo "<br />";
         echo "password " . $USERPASS;
-        echo "<br />";*/
+        echo "<br />";
+        */
         echo "<script> window.location.assign('/admin-login.php?login=true'); </script>";
       } else {
         /*
@@ -48,7 +49,7 @@
         echo "password " . $USERPASS;
         echo "<br />";
         */
-        echo "<script> window.location.assign('/admin-login.php?login=false'); </script>";
+        //echo "<script> window.location.assign('/admin-login.php?login=false'); </script>";
       }
     }
   }

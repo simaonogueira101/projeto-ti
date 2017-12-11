@@ -13,9 +13,6 @@
 
     <?php include 'sections/header-footer/header.html'; ?>
 
-    <?php
-      include 'php/login.php';
-    ?>
     <div class="main-footer main-login" id="main">
       <form action="admin-login.php?login=false" method="POST">
           <main class="main-admin">
@@ -24,6 +21,11 @@
               <h3 class="dark-orange-text text-1 press-start title">Login</h3>
 
               <div class="form">
+
+                <?php
+                  include 'php/login.php';
+                ?>
+                
                 <div class="field">
                   <div class="control">
                     <input name="username" type="text" placeholder="username">
