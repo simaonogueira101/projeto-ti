@@ -14,18 +14,10 @@
 
     <?php
       $dbopts = parse_url(getenv('DATABASE_URL'));
-      $app->register(new Csanquer\Silex\PdoServiceProvider\Provider\PDOServiceProvider('pdo'),
-                   array(
-                    'pdo.server' => array(
-                       'driver'   => 'pgsql',
-                       'user' => $dbopts["user"],
-                       'password' => $dbopts["pass"],
-                       'host' => $dbopts["host"],
-                       'port' => $dbopts["port"],
-                       'dbname' => ltrim($dbopts["path"],'/')
-                       )
-                   )
-      );
+
+      $conn_string = $dbopts["host"] $dbopts["port"] ltrim($dbopts["path"],'/') $dbopts["user"] $dbopts["pass"];
+      $dbconn4 = pg_connect($conn_string);
+      //connect to a database named "test" on the host "sheep" with a username and password
     ?>
 
     <div class="hero" id="hero">
