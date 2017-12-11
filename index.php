@@ -16,11 +16,10 @@
       $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
       $dbconn = pg_connect($conn_string);
       $result = pg_query($dbconn, "SELECT * FROM products");
-
-      while ($row = pg_fetch_row($result)) {
-        echo "Author: $row[0]  E-mail: $row[1]";
-        echo "<br />\n";
-      }
+      $row = pg_fetch_row($result)
+      echo $row[0];
+      echo $row[1];
+      echo $row[2];
     ?>
 
     <div class="hero" id="hero">
