@@ -21,6 +21,7 @@
       //connect to a database named "test" on the host "sheep" with a username and password
     */
     echo getenv('DATABASE_URL');
+    echo parse_url(getenv('DATABASE_URL'));
     echo "hello!";
     ?>
 
