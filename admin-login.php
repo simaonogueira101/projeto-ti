@@ -12,7 +12,7 @@
   <body id="body">
     <?php include 'sections/header-footer/header.html'; ?>
 
-    <div class="main-footer" id="main">
+    <div class="main-footer main-login" id="main">
         <main class="main-admin">
           <div class="contact-form">
 
@@ -20,31 +20,24 @@
               include 'php/login.php';
             ?>
 
+            <h3 class="dark-orange-text text-1 press-start title">Login</h3>
+
             <div class="form">
               <div class="field">
-                <label class="press-start">Name</label>
                 <div class="control">
-                  <input class="input" type="text" placeholder="Your Name">
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="press-start">Email</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="youremail@yourprovider.com">
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="press-start">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Hello 8Bit Forgers!"></textarea>
+                  <input class="user" type="text" placeholder="username">
                 </div>
               </div>
 
               <div class="field">
                 <div class="control">
-                  <input type="submit">
+                  <input class="password" type="text" placeholder="password">
+                </div>
+              </div>
+
+              <div class="field">
+                <div class="control">
+                  <input class="submit" type="submit">
                 </div>
               </div>
             </div>

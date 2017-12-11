@@ -1365,3 +1365,15 @@ label {
   left: 0;
   bottom: 0;
 }
+
+.main-login input {
+  border: solid 1px #EB6B32;
+}
+.main-login .submit {
+  background-color: #EB6B32;
+  color: white;
+}
+.main-login h3 {
+  margin-top: 24px;
+  margin-bottom: 12px;
+}

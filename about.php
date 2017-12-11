@@ -47,6 +47,7 @@
           </form>
 
           <?php
+          /*
             include 'php/config.php';
 
             $to      = $EMAIL;
@@ -59,6 +60,7 @@
             if ($_POST['message']) {
               mail($to, $subject, $message, $headers);
             }
+            */
           ?>
 
           <a class="text-6 text-bold press-start contact-button exit-button" id="contact-exit" href="about.php?contact=false">
