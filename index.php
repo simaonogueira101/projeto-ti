@@ -80,7 +80,7 @@
                             Making your own computer from scratch is not only fun to do but cheaper as well. You can get
                             to choose the parts you want to use on your PC.
                         </p>
-                        <a class="light-text text-bold text-6" href="sections/portfolio-project/project1.html">
+                        <a class="light-text text-bold text-6" href="sections/portfolio-project/project1.php">
                             Read More...
                             <div class="link-line"></div>
                         </a>

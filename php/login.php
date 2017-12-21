@@ -1,11 +1,5 @@
 <?php
-  // For deploy
-  $dbopts = parse_url(getenv('DATABASE_URL'));
-  $conn_string = "host=".$dbopts["host"] . " port=".$dbopts["port"] . " dbname=".ltrim($dbopts["path"],'/') . " user=".$dbopts["user"] . " password=".$dbopts["pass"];
-  $dbconn = pg_connect($conn_string);
-
-  // For local
-  //$dbconn = pg_connect("host=localhost port=5432 dbname=simaonogueira");
+  include 'server-connection.php';
 
   //Queries
   $result = pg_query($dbconn, "SELECT * FROM user_table");
@@ -34,6 +28,8 @@
         echo "password " . $USERPASS;
         echo "<br />";
         */
+        $_SESSION[‘logged’] = "true";
+        //echo $_SESSION[‘logged’];
         echo "<script> window.location.assign('/admin-login.php?login=true'); </script>";
       } else {
         /*

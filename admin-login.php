@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,7 +26,7 @@
                 <?php
                   include 'php/login.php';
                 ?>
-                
+
                 <div class="field">
                   <div class="control">
                     <input name="username" type="text" placeholder="username">
