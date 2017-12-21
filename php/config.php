@@ -1,8 +1,8 @@
 <?php
   //Local
-  $EMAIL = '$mail->send()';
+  //$EMAIL = '$mail->send()';
 
   //Deploy
-  //$EMAIL = getenv('8BitEmail');
-  echo $EMAIL;
+  $EMAIL = getenv('8BitEmail');
+  //echo $EMAIL;
 ?>
